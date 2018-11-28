@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Introduction - Maxz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta name="format-detection">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="icon" type="image/png" href="../favicon.png?version=4">
+</head>
+
+<body class="preload">
+  <div class="container-fluid">
+    <header>
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="col-md-12 text-center"><a href="index.html" class="brand"><img alt="MaxzGlasses" src="../images/logoBSSA.png"
+                class="default"><img alt="MaxzGlasses" src="../images/logoBSSA-white-np.png" class="white"></a>
+            <ul class="main-nav">
+              <li><a href="../index.html" title="Home">Home</a>
+              </li>
+              <li><a href="../pages/about.html" title="About">About</a>
+              </li>
+              <li><a href="pages/personalinterests.html" title="Hobbies">Hobbies</a>
+              </li>
+              <li><a href="../pages/contact.html" title="Contact" class="active">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid fadein">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="text-center intro">
+            <h1 class="typed">Write me</h1>
+          </div>
+          <form id="form" action="/php/mail.php" class="form mt-md">
+            <label>What's your name? *</label>
+            <input required type="text" name="name" class="form-control">
+            <label>Phone number</label>
+            <input type="text" name="phone" class="form-control">
+            <label>E-mail address *</label>
+            <input required type="email" name="email" class="form-control">
+            <label>Tell me what's up *</label>
+            <textarea required name="message" class="form-control"></textarea>
+            <button id="send" type="submit" class="btn btn-default">Send message</button><span class="p-md">* These
+              fields are required</span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center"><span>&copy; Hallo met Maxz. <a href="https://www.hallometmaxz.nl">click
+                here</a></span></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- The type animation script-->
+  <script src="../js/vendor.js"></script>
+  <script src="../js/functions.js"></script>
+  <script>$(function () { $(".typed").typed({ strings: ["Say hello!", "di hola", "さようなら", "Dite ciao", "E aloha mai", "Zeg hallo"], typeSpeed: 130, loop: true }); });</script>
+</body>
+
+</html>
