@@ -1,0 +1,1060 @@
+.mCustomScrollbar {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom
+}
+
+.mCustomScrollbar.mCS_no_scrollbar,
+.mCustomScrollbar.mCS_touch_action {
+    -ms-touch-action: auto;
+    touch-action: auto
+}
+
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: 0;
+    direction: ltr
+}
+
+.mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto
+}
+
+.mCSB_inside>.mCSB_container {
+    margin-right: 30px
+}
+
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0
+}
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container {
+    margin-right: 0;
+    margin-left: 30px
+}
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-left: 0
+}
+
+.mCSB_scrollTools {
+    position: absolute;
+    width: 16px;
+    height: auto;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+.mCSB_outside+.mCSB_scrollTools {
+    right: -26px
+}
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_scrollTools,
+.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools {
+    right: auto;
+    left: 0
+}
+
+.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools {
+    left: -26px
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto
+}
+
+.mCSB_scrollTools a+.mCSB_draggerContainer {
+    margin: 20px 0
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    z-index: 1
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    position: relative;
+    width: 4px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    text-align: center
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+    width: 12px
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    width: 8px
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer
+}
+
+.mCSB_scrollTools .mCSB_buttonDown {
+    bottom: 0
+}
+
+.mCSB_horizontal.mCSB_inside>.mCSB_container {
+    margin-right: 0;
+    margin-bottom: 30px
+}
+
+.mCSB_horizontal.mCSB_outside>.mCSB_container {
+    min-height: 100%
+}
+
+.mCSB_horizontal>.mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden {
+    margin-bottom: 0
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    width: auto;
+    height: 16px;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.mCustomScrollBox+.mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox+.mCSB_scrollTools+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    bottom: -26px
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal a+.mCSB_draggerContainer {
+    margin: 0 20px
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    width: 100%;
+    height: 2px;
+    margin: 7px 0
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+    width: 30px;
+    height: 100%;
+    left: 0
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    height: 4px;
+    margin: 6px auto
+}
+
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+    height: 12px;
+    margin: 2px auto
+}
+
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    height: 8px;
+    margin: 4px 0
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft {
+    left: 0
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+    right: 0
+}
+
+.mCSB_container_wrapper {
+    position: absolute;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: 30px;
+    margin-bottom: 30px
+}
+
+.mCSB_container_wrapper>.mCSB_container {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.mCSB_vertical_horizontal>.mCSB_scrollTools.mCSB_scrollTools_vertical {
+    bottom: 20px
+}
+
+.mCSB_vertical_horizontal>.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    right: 20px
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden+.mCSB_scrollTools.mCSB_scrollTools_vertical {
+    bottom: 0
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden+.mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCS-dir-rtl>.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    right: 0
+}
+
+.mCS-dir-rtl>.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    left: 20px
+}
+
+.mCS-dir-rtl>.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden+.mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    left: 0
+}
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container_wrapper {
+    margin-right: 0;
+    margin-left: 30px
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden>.mCSB_container {
+    padding-right: 0
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden>.mCSB_container {
+    padding-bottom: 0
+}
+
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0;
+    margin-left: 0
+}
+
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+    margin-bottom: 0
+}
+
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+    -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    transition: opacity .2s ease-in-out, background-color .2s ease-in-out
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
+    -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+    transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out
+}
+
+.mCSB_scrollTools {
+    opacity: .75;
+    filter: alpha(opacity=75);
+    -ms-filter: alpha(opacity=75)
+}
+
+.mCS-autoHide>.mCustomScrollBox>.mCSB_scrollTools,
+.mCS-autoHide>.mCustomScrollBox ~ .mCSB_scrollTools {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: alpha(opacity=0)
+}
+
+.mCustomScrollbar>.mCustomScrollBox>.mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar>.mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollBox:hover>.mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCS-autoHide:hover>.mCustomScrollBox>.mCSB_scrollTools,
+.mCS-autoHide:hover>.mCustomScrollBox ~ .mCSB_scrollTools {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: alpha(opacity=100)
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+    filter: alpha(opacity=40);
+    -ms-filter: alpha(opacity=40)
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75);
+    filter: alpha(opacity=75);
+    -ms-filter: alpha(opacity=75)
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
+    filter: alpha(opacity=85);
+    -ms-filter: alpha(opacity=85)
+}
+
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    filter: alpha(opacity=90);
+    -ms-filter: alpha(opacity=90)
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+    background-image: url(mCSB_buttons.png);
+    background-repeat: no-repeat;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    -ms-filter: alpha(opacity=40)
+}
+
+.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: 0 0
+}
+
+.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: 0 -20px
+}
+
+.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: 0 -40px
+}
+
+.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: 0 -56px
+}
+
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover {
+    opacity: .75;
+    filter: alpha(opacity=75);
+    -ms-filter: alpha(opacity=75)
+}
+
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active {
+    opacity: .9;
+    filter: alpha(opacity=90);
+    -ms-filter: alpha(opacity=90)
+}
+
+html,
+body {
+    height: 100%;
+    background: none #000
+}
+
+a,
+a:active,
+a:focus,
+input:focus {
+    text-decoration: none!important;
+    outline: 0
+}
+
+.clear {
+    clear: both
+}
+
+button:focus {
+    outline: 0
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.1)
+}
+
+:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.1)
+}
+
+::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.1)
+}
+
+:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.1)
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important
+}
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: none #000;
+    color: #fff;
+    font-size: 16px
+}
+
+body.set-overflow {
+    overflow: visible;
+    overflow-x: hidden
+}
+
+.italic {
+    font-style: italic
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.1;
+    font-weight: normal;
+    text-decoration: none;
+    -webkit-text-stroke: .2px
+}
+
+.thin {
+    font-weight: 100
+}
+
+.mCSB_inside>.mCSB_container {
+    margin-right: 0
+}
+
+.mCSB_scrollTools {
+    right: 0;
+    width: 5px;
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)"
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 5px;
+    border-radius: 0
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 5px;
+    border-radius: 0;
+    background-color: rgba(239, 13, 51, 0.75)
+}
+
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background: #ef0d33
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background: #ef0d33
+}
+
+.vflow {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400
+}
+
+.vflow h1 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 68px;
+    line-height: 90px
+}
+
+.vflow h2,
+.vflow h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 26px;
+    line-height: 60px
+}
+
+.vflow h4,
+.vflow h5 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 30px
+}
+
+.vflow p,
+.vflow ul,
+.vflow ol,
+.vflow pre,
+.vflow table,
+.vflow blockquote {
+    margin-top: 0;
+    margin-bottom: 30px
+}
+
+.vflow ul ul,
+.vflow ol ol,
+.vflow ul ol,
+.vflow ol ul {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.vflow hr {
+    border: 1px solid;
+    margin: -1px 0
+}
+
+.vflow a,
+.vflow b,
+.vflow i,
+.vflow strong,
+.vflow em,
+.vflow small,
+.vflow code {
+    line-height: 0
+}
+
+.vflow sub,
+.vflow sup {
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+.vflow sup {
+    top: -0.5em
+}
+
+.vflow sub {
+    bottom: -0.25em
+}
+
+.fw600 {
+    font-weight: 600!important
+}
+
+.st-btn {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    line-height: 0;
+    color: #FFF;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+.st-btn:hover,
+.st-btn:active {
+    background: #FFF;
+    color: #111517
+}
+
+.btn-bordered {
+    padding: 28px;
+    color: #FFF;
+    border: 2px solid #FFF;
+    background: transparent
+}
+
+.btn-fill {
+    padding: 30px;
+    border: 0;
+    background: #ef0d33
+}
+
+a.st-btn {
+    color: #FFF
+}
+
+.form-control {
+    height: 60px;
+    border: 0;
+    border-bottom: 1px solid #CCC;
+    background: transparent!important;
+    line-height: 30px;
+    box-shadow: none!important
+}
+
+.form-group {
+    margin-bottom: 30px
+}
+
+textarea.form-control {
+    height: 120px
+}
+
+.form-group .btn-bordered {
+    border-color: #ef0d33;
+    color: #ef0d33
+}
+
+.form-group .btn-bordered:hover,
+.form-group .btn-bordered:active {
+    background: #ef0d33;
+    color: #FFF
+}
+
+#main-wrapper {
+    display: none
+}
+
+.split-container {
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.scroll-touch .split-container {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+.side-left,
+.side-right {
+    position: relative;
+    width: 100%
+}
+
+.side-right {
+    background: #f5f5f5
+}
+
+#intro-content {
+    height: 100%;
+    padding: 0;
+    background: #111517
+}
+
+#intro-content>div {
+    z-index: 1
+}
+
+#intro-content::before,
+#intro-content::after,
+.splash-page::before,
+.splash-page::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+#intro-content::before,
+.splash-page::before {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+#intro-content::after,
+.splash-page::after {
+    background: -moz-linear-gradient(270deg, rgba(29, 31, 40, 0.75) 0, rgba(29, 31, 40, 0.95) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(29, 31, 40, 0.75) 0, rgba(29, 31, 40, 0.95) 100%);
+    background: -o-linear-gradient(270deg, rgba(29, 31, 40, 0.75) 0, rgba(29, 31, 40, 0.95) 100%);
+    background: -ms-linear-gradient(270deg, rgba(29, 31, 40, 0.75) 0, rgba(29, 31, 40, 0.95) 100%);
+    background: linear-gradient(180deg, rgba(29, 31, 40, 0.75) 0, rgba(29, 31, 40, 0.95) 100%)
+}
+
+#ambient-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+#ambient-bg canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.st-logo {
+    position: relative;
+    padding: 60px 10% 0
+}
+
+.st-logo img {
+    height: 60px
+}
+
+.st-desc {
+    position: relative;
+    margin: 0 10%
+}
+
+.st-footer {
+    position: relative;
+    padding: 0 10%;
+    margin-left: -15px
+}
+
+.social-icons {
+    padding: 0;
+    margin: 0!important;
+    list-style: none
+}
+
+.social-icons .fa {
+    background: none transparent;
+    color: #FFF
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 4px
+}
+
+.social-icons li a {
+    display: inline-block;
+    width: 32px;
+    height: 60px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center
+}
+
+.social-icons li a:hover,
+.social-icons li a:active {
+    opacity: .7
+}
+
+#main-content {
+    padding: 30px;
+    color: #111517
+}
+
+#main-content h3 {
+    text-transform: uppercase
+}
+
+#main-content p {
+    color: #888
+}
+
+.st-gallery a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 210px;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in
+}
+
+.st-gallery figcaption {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    color: #888;
+    font-weight: 600;
+    line-height: 60px
+}
+
+.ofit {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    font-family: 'object-fit: cover;'
+}
+
+.st-gallery .pszoom {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+.st-gallery a:hover .pszoom {
+    opacity: 1
+}
+
+.addr-details p {
+    font-size: 14px
+}
+
+.addr-details span {
+    color: #111517
+}
+
+.addr-details a {
+    color: #888
+}
+
+.addr-details a:hover {
+    color: #ef0d33
+}
+
+p.copyright {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 30px 0 0;
+    color: rgba(136, 136, 136, 0.6)
+}
+
+#close-info {
+    position: fixed;
+    top: 15px;
+    right: -60px;
+    display: none;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    color: #777;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer
+}
+
+#close-info:hover {
+    opacity: .7
+}
+
+.sub-bg:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85)
+}
+
+.notify-sec {
+    padding: 10%
+}
+
+#subscribe-page .form-group {
+    margin-bottom: 30px
+}
+
+#subscribe-page .modal-body {
+    border-radius: 0;
+    border: 1px solid #FFF
+}
+
+#subscribe-page .form-control {
+    border: 1px solid #FFF;
+    color: #f5f5f5
+}
+
+p.xmas-message {
+    min-height: 30px;
+    margin-bottom: 0!important
+}
+
+.xmas-message i {
+    margin-right: 12px
+}
+
+.xmas-message.error {
+    color: #f03!important
+}
+
+.xmas-message.success {
+    color: #3dad48!important
+}
+
+.close-form {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    padding: 0 16px!important;
+    font-size: 26px;
+    line-height: 52px;
+    color: #FFF!important
+}
+
+@media only screen and (min-width:768px) {
+    h1 {
+        -webkit-text-stroke: 0
+    }
+    .vflow h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 42px;
+        line-height: 60px
+    }
+    #main-content {
+        padding: 30px 5%
+    }
+    #main-content h3 {
+        letter-spacing: 1px
+    }
+    #subscribe-page .modal-body {
+        border: 0
+    }
+    .form-group {
+        margin-bottom: 60px
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .st-btn {
+        margin-bottom: 0
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .mCSB_scrollTools {
+        right: -5px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none
+    }
+    .split-active .mCSB_scrollTools {
+        right: 50%;
+        -webkit-transition: all 0s .5s;
+        -moz-transition: all 0s .5s;
+        -o-transition: all 0s .5s;
+        transition: all 0s .5s
+    }
+    #close-info {
+        display: inline-block;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none
+    }
+    .split-active #close-info {
+        right: 0;
+        -webkit-transition: all 0s .25s, opacity 0s;
+        -moz-transition: all 0s .25s, opacity 0s;
+        -o-transition: all 0s .25s, opacity 0s;
+        transition: all 0s .25s, opacity 0s
+    }
+    .side-left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%
+    }
+    #intro-content::before,
+    #intro-content::after {
+        left: 100%
+    }
+    #intro-content::after {
+        background: none transparent
+    }
+    .side-right {
+        width: 50%;
+        left: 100%;
+        -webkit-transition: left .5s ease-out;
+        -moz-transition: left .5s ease-out;
+        -o-transition: left .5s ease-out;
+        transition: left .5s ease-out
+    }
+    .split-active .side-right {
+        left: 0
+    }
+    .st-logo {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        padding: 0
+    }
+    .st-logo img {
+        height: 75px
+    }
+    .st-desc {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+    .st-footer {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        padding: 0;
+        margin-bottom: -22px
+    }
+    .st-gallery .pszoom {
+        display: block
+    }
+}

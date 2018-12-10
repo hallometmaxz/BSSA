@@ -1,0 +1,170 @@
+/*
+*
+* Template Name: Xmas - Overkill of Effects
+* Concept: All the effects!
+* File Associated: index.html
+* Date Modified: 2018-12-07
+* Description: Main CSS
+* Author: Hallo met Maxz
+*
+*/
+
+/* ==================================================================
+* Table of Contents:
+*
+* 1.0 - Custom Styles
+*       1.1 - Font Style Declarations and Other Fixes
+*       1.2 - Font Colors and Backgrounds
+* 2.0 - Responsive Styles
+* 		2.1 - Small Devices, Tablets (≥768px)
+* 		2.2 - Medium Devices, Desktops (≥992px)
+* 		2.3 - Large Devices, Desktops (≥1200px)
+*       2.4 - Wide Screens, Desktops (≥1824px)
+* 3.0 - Other Page
+
+================================================================== */
+/* ==================================================================
+1.0 Custom Styles
+================================================================== */
+
+/* 1.1 Font Style Declarations and Other Fixes
+-------------------------------------------------------------- */
+.splash-page, .pl-wrapper { /* Teaser Font */
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+.sound-info {
+    font-family: "Arial", sans-serif;
+}
+
+.pl-wrapper .hashtag {
+    font-weight: 700;
+}
+
+.lt-main {
+    font-size: 18px;
+	font-size: 5vw;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #820404;
+}
+
+.snow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.splash-page .centered {
+    white-space: normal;
+}
+
+.splash-page .st-btn {
+    margin: 0;
+}
+
+.pl-wrapper { /* Hide Player Controls by default */
+    display: none;
+}
+
+#buy-button {
+    margin-top: 16px;
+    min-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 26px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 14px;
+    background: #820404 !important;
+    border: 0px !important;
+    border-radius: 0;
+}
+
+#buy-button:hover {
+    background: #fff !important;
+    color: #000;
+}
+
+/* 1.2 Font Colors and Backgrounds
+Stamp - #111517, Content BG - #F5F5F5, Headline - #111517,
+Paragraph - #888, Contrast / Highlight(Buttons BG) - #820404
+-------------------------------------------------------------- */
+.sk-double-bounce .sk-child /* Preloader Circle Color */
+{
+    background: none #FFF;
+}
+
+.splash-page .btn-fill {
+    font-weight: 700;
+    background: #820404;
+}
+
+/* ==================================================================
+2.0 - Responsive Styles
+================================================================== */
+
+/* 2.1 - Small Devices, Tablets (≥768px)
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+    .lt-main {
+        font-size: 38px;
+        font-size: 4.5vw;
+    }
+}
+
+/* 2.2 - Medium Devices, Desktops (≥992px)
+-------------------------------------------------------------- */
+@media only screen and (min-width : 992px) {
+    .lt-main {
+        font-size: 48px;
+        font-size: 4.5vw;
+    }
+
+    #buy-button {
+        min-width: 160px;
+        height: 42px;
+        line-height: 42px;
+    }
+}
+
+/* 2.3 - Large Devices, Desktops (≥1200px)
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1200px) {
+    .lt-main {
+        font-size: 64px;
+        font-size: 4.5vw;
+    }
+
+    #buy-button {
+        min-width: 180px;
+        height: 46px;
+        line-height: 46px;
+    }
+}
+
+/* 2.4 - Wide Screens, Desktops (≥1824px)
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+    .lt-main {
+        font-size: 92px;
+        font-size: 4.5vw;
+    }
+
+    #buy-button {
+        min-width: 200px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
